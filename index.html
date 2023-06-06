@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />  
+    <title>Furniking</title>  
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script><!--JQuery-->
+    
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./forbutton.css"/>
+    <link rel="stylesheet" href="./effects.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM Sans:wght@400;500&display=swap"/>
+  </head>
+  <body>    
+    <div id="snackbar">Сайт разработала Пачковская Елизавета</div>
+    <!--подсказка-->
+    <div id="tooltip"></div>
+    <!--кнопка наверх-->
+    <div id="topNubex"><img src="./public/naverh.png" width="40px" height=auto /></div>
+    <!---->
+    <div class="furniking-web-design">
+      <div class="furniking-web-design-child"></div>
+      <img class="kisspng-window-living-room-cur-icon" alt="" src="./public/chairr.png" />
+      <img class="furniking-web-design-item" alt="" src="./public/rectangle-25@2x.png"/>
+      <div class="furniking-web-design-inner"></div>
+      <div class="frame">
+        <img class="rectangle-icon" alt="" src="./public/rectangle@2x.png" />
+      </div>
+      <div class="hero-section" data-scroll-to="heroSectionContainer">
+        <header class="header">
+          <a class="logo" data-animate-on-scroll>
+            <div class="furniking">Furniking</div>
+            <img class="group-icon" alt="" src="./public/group.svg" />
+          </a>
+          <div class="top-bar">
+            <div class="top-bar-child"></div>
+            <div class="text">
+              <a class="login-or-sign">Login or Sign up</a>
+              <div class="english">
+                <div class="english-usd">English (USD)</div>
+                <select class="group" autofocus>
+                  <option value="1">Russian (RUB)</option>
+                  <option value="2">Belarus (BYN)</option>
+                </select>
+              </div>
+              <div class="text-child"></div>
+              <div class="english-usd">Welcome to our online shop</div>
+            </div>
+          </div>
+          <div class="search">
+            <input  class="search-child"  type="text"  maxlength="{20}"  minlength="{1}" />
+            <div class="search-here">Search here</div>
+            <div class="categories">Categories</div>
+            <select class="icon" autofocus>
+              <option value="1">New Arrivas</option>
+              <option value="2">Hot Sale</option>
+              <option value="3">Furniture</option>
+              <option value="4">Amrature</option>
+              <option value="5">Tabble</option>
+              <option value="6">Chair</option>
+              <option value="7">Sofa</option>
+              <option value="8">Mirrors</option>
+              <option value="9">Stools</option>
+              <option value="10">Benches</option>
+            </select>
+            <div class="search-item"></div>
+            <div class="search-inner"></div>
+            <button class="zoom-2-1" autofocus>
+              <img class="group-icon1" alt="" src="./public/group1.svg" />
+            </button>
+          </div>
+          <div class="shop" data-animate-on-scroll>
+            <button class="icon-shop" autofocus>
+              <img class="vector-icon" alt="" src="./public/vector.svg" data-tooltip="Корзина" />              
+            </button>
+            <div class="div">
+              <div class="child"></div>
+              <div class="div1">4</div>
+            </div>
+          </div>
+          <form action="forma.html">          
+          <button class="avatar-1" autofocus >
+            <img class="group-icon2" alt="" src="./public/group2.svg" data-tooltip="Личный кабинет"/>
+          </button></form>
+          <button  class="iconlylightnotification"  autofocus  data-animate-on-scroll onclick="myFunction()">
+            <img  class="notification-icon"  alt=""  src="./public/notification.svg" data-tooltip="Уведомления" />
+          </button>
+        </header>
+        <main class="main">
+          <div class="main-child"></div>
+          <div class="site-bar">
+            <div class="navigation-menu">
+              <a class="home">HOME</a>
+              <a class="shop1">SHOP</a>
+              <a class="blog">BLOG</a>
+              <a class="about">ABOUT</a>
+              <a class="contact-us">CONTACT US</a>
+              <div class="number">
+                <div class="div2">718-414-3871</div>
+                <img  class="iconlylightcalling"  alt=""  src="./public/iconlylightcalling.svg" />
+              </div>
+            </div>
+          </div>
+          <button class="all-collections" autofocus>
+            <div class="all-collections-child"></div>
+            <div class="all-collections1">ALL COLLECTIONS</div>
+            <img class="menu-1-icon" alt="" src="./public/menu-1.svg" />
+          </button>
+          <div class="all-collections2">
+            <div class="category">
+              <div class="category-child"></div>
+              <button class="all" autofocus>
+                <div class="stools">All</div>
+                <div class="all-child"></div>
+              </button>
+              <button class="chair" autofocus>
+                <div class="stools">Chair</div>
+                <div class="all-child"></div>
+              </button>
+              <button class="new-arrivals" autofocus>
+                <div class="stools">New Arrivals</div>
+                <div class="all-child"></div>
+              </button>
+              <button class="sofa" autofocus>
+                <div class="stools">Sofa</div>
+                <div class="all-child"></div>
+              </button>
+              <button class="hot-sale" autofocus>
+                <div class="stools">Hot Sale</div>
+                <div class="all-child"></div>
+              </button>
+              <button class="mirrors" autofocus>
+                <div class="stools">Mirrors</div>
+                <div class="all-child"></div>
+              </button>
+              <button class="furniture" autofocus>
+                <div class="stools">Furniture</div>
+                <div class="all-child"></div>
+              </button>
+              <button class="chair2" autofocus>
+                <div class="stools">Stools</div>
+                <div class="all-child"></div>
+              </button>
+              <button class="amrature" autofocus>
+                <div class="stools">Amrature</div>
+                <div class="all-child"></div>
+              </button>
+              <button class="benches" autofocus>
+                <div class="benches1">Benches</div>
+              </button>
+              <button class="tabble" autofocus>
+                <div class="stools">Tabble</div>
+                <div class="all-child"></div>
+              </button>
+            </div>
+          </div>
+          <div class="hero-baner">
+            <div class="hero-baner-child"></div>
+            <div class="hero-baner-item"></div>
+            <div class="modernarmchair">
+              <div class="modernarmchair-child"></div>
+              <div class="frame1">
+                <img class="rectangle-icon1"  alt=""  src="./public/rectangle1@2x.png" />
+              </div>
+              <div class="office-desk-chair">Office Desk Chair</div>
+            </div>
+            <div class="modernarmchair1">
+              <div class="modernarmchair-child"></div>
+              <img class="rectangle-icon2" alt="" src="./public/rectangle2@2x.png"  />
+              <div class="div3">
+                <span>$</span>
+                <span class="span">180</span>
+              </div>
+              <div class="home-alisa-sofa">Home Alisa Sofa</div>
+            </div>
+            <div class="modernarmchair2">
+              <div class="modernarmchair-child"></div>
+              <div class="modern-chair">Modern Chair</div>
+              <img  class="rectangle-icon3"  alt=""  src="./public/rectangle3@2x.png"/>
+              <div class="div4">
+                <span>$</span>
+                <span class="span">250</span>
+              </div>
+              <div class="text1"></div>
+            </div>
+            <img class="furniture-1-icon" alt="" src="./public/furniture-1@2x.png" onclick = 'openImageWindow(this.src);'/>
+            <div class="frame2"></div>
+            <img class="hero-baner-inner" alt="" src="./public/vector-5.svg" />
+            <div class="get-50-off">Get 50% off all products</div>
+            <div class="top-collections-2022">TOP COLLECTIONS 2022</div>
+            <button class="shop-now-cta" autofocus data-animate-on-scroll >
+              <div class="shop-now-cta-child"></div>
+              <b class="shop-now">SHOP NOW</b>
+            </button>
+            <img class="slider-icon" alt="" src="./public/slider.svg" />
+          </div>
+          <div class="tittle">
+            <div class="we-serve-your-container">
+              <p class="we-serve-your">We Serve Your</p>
+              <p class="we-serve-your">Dream Furniture</p>
+            </div>
+            <div class="frame3">
+              <img class="rectangle-icon4" alt="" src="./public/rectangle4@2x.png" />
+              <div class="frame4">
+                <img  class="rectangle-icon5"  alt=""  src="./public/rectangle5@2x.png"/>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <div class="div5">
+        <span>$</span>
+        <span class="span">120</span>
+      </div>
+      <div class="discount">
+        <div class="discount-child"></div>
+        <div class="div6">50%</div>
+      </div>
+      <div class="offer">
+        <div class="furniture2">
+          <img class="mask-group-icon" alt="" src="./public/mask-group@2x.png"/>
+          <div class="content">
+            <b class="modern-furniture-collections">Modern Furniture Collections</b>
+            <div class="starting-from-500-container">
+              <span class="starting-from">Starting from</span>
+              <span> </span>
+              <span class="span3">$500</span>
+            </div>
+            <div class="read-more">
+              <div class="modern-furniture-collections">Read more</div>
+              <img class="vector-icon1" alt="" src="./public/vector1.svg" />
+            </div>
+          </div>
+        </div>
+        <img class="offer-child" alt="" src="./public/rectangle-34@2x.png" />
+        <div class="minimal-sofa">
+          <div class="minimal-sofa-child"></div>
+          <img class="minimal-sofa-item" alt="" src="./public/rectangle-33@2x.png"/>
+          <div class="content1">
+            <div class="minimal-sofa-collections">Minimal Sofa collections</div>
+            <div class="sale-upto-40">Sale upto 40% discount</div>
+            <div class="read-more2">
+              <div class="modern-furniture-collections">Read more</div>
+              <img class="vector-icon2" alt="" src="./public/vector1.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="book-case">
+          <div class="content2">
+            <div class="geometric-bookcase">Geometric Bookcase</div>
+            <div class="up-to-20">Up to 20% discount</div>
+          </div>
+        </div>
+        <div class="read-more4">
+          <div class="modern-furniture-collections">Read more</div>
+          <img class="vector-icon1" alt="" src="./public/vector1.svg" />
+        </div>
+      </div>
+      <div class="feature">
+        <div class="payment">
+          <img class="wallet-1-icon" alt="" src="./public/wallet-1.svg" />          
+          <div class="payment1">
+            <div class="quick-payment">Quick Payment</div>
+            <div class="secure-payment">100% secure payment</div>
+          </div>
+        </div>
+        <div class="gift-card">
+          <div class="payment2">
+            <div class="quick-payment">Smart Gift Card</div>
+            <div class="secure-payment">Buy $1000 to get card</div>
+          </div>
+          <img class="page-1-icon" alt="" src="./public/page1.svg" />
+        </div>
+        <div class="shipping">
+          <div class="shipping1">
+            <div class="quick-payment">Free Shipping</div>
+            <div class="secure-payment">Orders over $100</div>
+          </div>
+          <img class="wallet-1-icon"  id="train" alt="" src="./public/freedelivery-1.svg" />
+         
+        </div>
+        <div class="payment3">
+          <div class="support">
+            <div class="quick-payment">24/7 Support</div>
+            <div class="secure-payment">Quick support</div>
+          </div>
+          <img class="wallet-1-icon" alt="" src="./public/support-1.svg" />
+        </div>
+      </div>
+      <div class="trending">
+        <b class="trending1">TRENDING</b>
+        <div class="catagory">
+          <a class="top-products">Top Products</a>
+          <a class="new-arrivals2">New Arrivals</a>
+          <a class="best-sellers"> Best Sellers</a>
+        </div>
+        <div class="minimal-chair">
+          <div class="product">
+            <b class="b">$180</b>
+            <div class="div7">$250</div>
+            <div class="minimal-lcd-chair">Minimal LCD chair</div>
+            <div class="bench">Chair</div>
+            <div class="image-placeholder">
+              <div class="container"></div>
+              <img  class="container-icon"  alt=""  src="./public/container@2x.png"/>
+            </div>
+            <img class="hover-feature-icon" alt="" src="./public/hover-feature.svg"/>
+          </div>
+          <div class="new">
+            <div class="new-child"></div>
+            <div class="sale">New</div>
+          </div>
+          <img class="review-icon" alt="" src="./public/review.svg" />
+        </div>
+        <div class="minimal-chair1">
+          <div class="product">
+            <b class="b">$180</b>
+            <div class="div7">$250</div>
+            <div class="minimal-lcd-chair">Minimal Wood chair</div>
+            <div class="bench">Chair</div>
+            <div class="image-placeholder">
+              <div class="container"></div>
+              <img class="container-icon" alt="" src="./public/container1@2x.png"/>
+            </div>
+            <img  class="hover-feature-icon1"  alt=""  src="./public/hover-feature1.svg"/>
+          </div>
+          <div class="new">
+            <div class="new-child"></div>
+            <div class="sale">New</div>
+          </div>
+          <img class="review-icon" alt="" src="./public/review1.svg" />
+        </div>
+        <div class="minimal-chair2">
+          <div class="product">
+            <b class="b">$120</b>
+            <div class="div7">$150</div>
+            <div class="minimal-iconic-chair">Minimal iconic chair</div>
+            <div class="bench">Chair</div>
+            <div class="image-placeholder">
+              <div class="container"></div>
+              <img  class="container-icon"  alt=""  src="./public/container2@2x.png"/>
+            </div>
+            <div class="hover-feature">
+              <button class="favourite" autofocus>
+                <div class="container3"></div>
+                <img class="heart-icon" alt="" src="./public/heart.svg" />
+              </button>
+              <button class="shop2" autofocus>
+                <div class="container3"></div>
+                <img  class="fi-rr-shopping-bag-add-1-icon"  alt=""  src="./public/firrshoppingbagadd-1.svg"/>
+              </button>
+              <button class="compare" autofocus>
+                <div class="container3"></div>
+                <img  class="refresh-1-icon"  alt=""  src="./public/refresh-1.svg"/>
+              </button>
+              <button class="view" autofocus>
+                <div class="container3"></div>
+                <img  class="fi-rr-shopping-bag-add-1-icon"  alt=""  src="./public/firreye-1.svg"/>
+              </button>
+            </div>
+          </div>
+          <div class="new">
+            <div class="new-child"></div>
+            <div class="sale">New</div>
+          </div>
+          <img class="review-icon" alt="" src="./public/review2.svg" />
+        </div>
+        <div class="minimal-chair3">
+          <div class="product">
+            <b class="b">$120</b>
+            <div class="div7">$150</div>
+            <div class="minimal-iconic-chair">Elegent wood chair</div>
+            <div class="bench">Chair</div>
+            <div class="image-placeholder">
+              <div class="container"></div>
+              <img class="container-icon" alt="" src="./public/container3@2x.png"/>
+            </div>
+            <img class="hover-feature-icon2" alt="" src="./public/hover-feature1.svg"/>
+          </div>
+          <div class="new">
+            <div class="new-child"></div>
+            <div class="sale">New</div>
+          </div>
+          <img class="review-icon" alt="" src="./public/review3.svg" />
+        </div>
+        <div class="minimal-chair4">
+          <div class="product">
+            <b class="b">$100</b>
+            <div class="div7">$120</div>
+            <div class="dining-chairs">Dining chairs</div>
+            <div class="bench">Chair</div>
+            <div class="image-placeholder">
+              <div class="container"></div>
+              <img  class="container-icon"  alt=""  src="./public/container4@2x.png"/>
+            </div>
+            <img class="hover-feature-icon3"  alt=""  src="./public/hover-feature2.svg"/>
+          </div>
+          <div class="new">
+            <div class="new-child1"></div>
+            <div class="sale">Sale</div>
+          </div>
+          <img class="review-icon" alt="" src="./public/review1.svg" />
+        </div>
+        <div class="minimal-chair5">
+          <div class="product">
+            <b class="b">$100</b>
+            <div class="div7">$120</div>
+            <div class="dining-chairs">Modern chairs</div>
+            <div class="bench">Chair</div>
+            <div class="image-placeholder">
+              <div class="container"></div>
+              <img  class="container-icon"  alt=""  src="./public/container5@2x.png"/>
+            </div>
+            <img class="hover-feature-icon4" alt="" src="./public/hover-feature3.svg"/>
+          </div>
+          <div class="new">
+            <div class="new-child1"></div>
+            <div class="sale">Sale</div>
+          </div>
+          <img class="review-icon" alt="" src="./public/review4.svg" />
+        </div>
+        <div class="minimal-chair6">
+          <div class="product">
+            <b class="b">$130</b>
+            <div class="div7">$150</div>
+            <div class="buskbo-armchair">Buskbo armchair</div>
+            <div class="bench">Chair</div>
+            <div class="image-placeholder">
+              <div class="container"></div>
+              <img  class="container-icon"  alt=""  src="./public/container6@2x.png"/>
+            </div>
+            <img class="hover-feature-icon5" alt="" src="./public/hover-feature2.svg" />
+          </div>
+          <div class="new">
+            <div class="new-child1"></div>
+            <div class="sale">Sale</div>
+          </div>
+          <img class="review-icon" alt="" src="./public/review3.svg" />
+        </div>
+        <div class="minimal-chair7">
+          <div class="product">
+            <b class="b">$130</b>
+            <div class="div7">$150</div>
+            <div class="plastic-dining-chair">Plastic dining chair</div>
+            <div class="bench">Chair</div>
+            <div class="image-placeholder">
+              <div class="container"></div>
+              <img  class="container-icon"  alt=""  src="./public/container7@2x.png"/>
+            </div>
+            <img class="hover-feature-icon6" alt=""  src="./public/hover-feature4.svg"/>
+          </div>
+          <div class="new">
+            <div class="new-child1"></div>
+            <div class="sale">Sale</div>
+          </div>
+          <img class="review-icon" alt="" src="./public/review2.svg" />
+        </div>
+        <img class="circle-icon" alt="" src="./public/circle.svg" />
+        <img class="circle-icon1" alt="" src="./public/circle1.svg" />
+      </div>
+      <div class="offer-section">
+        <b class="special-offer">SPECIAL OFFER</b>
+        <div class="offer-content">
+          <div class="modern-chair1">
+            <div class="modern-chair-child"></div>
+            <img  class="modern-chair-item"  alt=""  src="./public/rectangle-44@2x.png"/>
+            <div class="new12">
+              <div class="new-child5"></div>
+              <div class="off">50% off</div>
+            </div>
+            <div class="shop-now-cta1">
+              <div class="shop-now-cta-item"></div>
+              <b class="shop-now1">SHOP NOW</b>
+            </div>
+            <div class="modern-chair2">Modern chair</div>
+            <div class="hot-chairs-of">Hot chairs of the modern era are now available in our stock.</div>
+            <div class="price">
+              <b class="b8">$75</b>
+              <div class="div15">$150</div>
+            </div>
+            <div class="time">
+              <div class="days">
+                <div class="days-child"></div>
+                <div class="div16">15</div>
+                <div class="days1">Days</div>
+              </div>
+              <div class="hrs">
+                <div class="days-child"></div>
+                <div class="div17">08</div>
+                <div class="hrs1">HRS</div>
+              </div>
+              <div class="mins">
+                <div class="days-child"></div>
+                <div class="div18">20</div>
+                <div class="min">MIN</div>
+              </div>
+              <div class="secs">
+                <div class="days-child"></div>
+                <div class="div18">12</div>
+                <div class="secs1">secs</div>
+              </div>
+            </div>
+          </div>
+          <div class="living-room contain">
+            <div class="offer-1">
+              <img  class="modern-chair-item"  alt=""  src="./public/rectangle-41@2x.png"/>
+              <img  class="modern-chair-item"  alt=""  src="./public/rectangle-43@2x.png"/>
+            </div>
+            <div class="shop-now-cta2">
+              <div class="shop-now-cta-item"></div>
+              <b class="shop-now1">SHOP NOW</b>
+            </div>
+            <div class="living-room-furniture">Living Room Furniture</div>
+            <div class="you-dont-have"> You don't have a chair. Are you ready for growth? Shop with us 40% discount! </div>
+            <div class="price1">
+              <b class="b8">$150</b>
+              <div class="div20">$250</div>
+            </div>
+            <div class="time1 overlay">
+              <div class="days">
+                <div class="days-child"></div>
+                <div class="div16">10</div>
+                <div class="days1">Days</div>
+              </div>
+              <div class="hrs">
+                <div class="days-child"></div>
+                <div class="div16">15</div>
+                <div class="hrs1">HRS</div>
+              </div>
+              <div class="mins">
+                <div class="days-child"></div>
+                <div class="div18">30</div>
+                <div class="min">MIN</div>
+              </div>
+              <div class="secs">
+                <div class="days-child"></div>
+                <div class="div18">22</div>
+                <div class="secs1">secs</div>
+              </div>
+            </div>
+          </div>
+          <div class="new12">
+            <div class="new-child5"></div>
+            <div class="off">40% off</div>
+          </div>
+        </div>
+      </div>
+      <div class="trending2">
+        <b class="our-products">OUR PRODUCTS</b>
+        <div class="catagory1">
+          <a class="top-products">All Products</a>
+          <a class="best-sellers1"> Best Sellers</a>
+          <a class="new-arrivals3">New Arrivals</a>
+          <a class="todays-deals">Todays Deals</a>
+        </div>
+        <div class="minimal-chair">
+          <div class="product">
+            <b class="b">$180</b>
+            <div class="div7">$250</div>
+            <div class="minimal-lcd-chair1">Minimal LCD chair</div>
+            <div class="bench">Chair</div>
+            <div class="image-placeholder">
+              <div class="container12"></div>
+              <img  class="container-icon8"  alt=""  src="./public/container8@2x.png" />
+            </div>
+            <img class="hover-feature-icon7" alt="" src="./public/hover-feature5.svg"/>
+          </div>
+          <div class="new">
+            <div class="new-child1"></div>
+            <div class="sale">Sale</div>
+          </div>
+          <img class="review-icon" alt="" src="./public/review.svg" />
+        </div>
+        <div class="minimal-chair1">
+          <div class="product">
+            <b class="b">$180</b>
+            <div class="div7">$250</div>
+            <div class="juno-hinged-lid-storage">Juno-Hinged Lid Storage</div>
+            <div class="storage">Storage</div>
+            <div class="image-placeholder">
+              <div class="container"></div>
+              <img  class="container-icon"  alt=""  src="./public/container9@2x.png"/>
+            </div>
+            <img  class="hover-feature-icon8"  alt=""  src="./public/hover-feature6.svg"/>
+          </div>
+          <div class="new">
+            <div class="new-child"></div>
+            <div class="sale">New</div>
+          </div>
+          <img class="review-icon" alt="" src="./public/review5.svg" />
+        </div>
+        <div class="minimal-chair2">
+          <div class="product">
+            <b class="b">$120</b>
+            <div class="div7">$150</div>
+            <div class="modern-sofa">Modern Sofa</div>
+            <div class="bench">sofa</div>
+            <div class="image-placeholder">
+              <div class="container"></div>
+              <img  class="container-icon"  alt=""  src="./public/container10@2x.png"/>
+            </div>
+            <img class="hover-feature-icon9" alt="" src="./public/hover-feature7.svg" />
+          </div>
+          <div class="new">
+            <div class="new-child"></div>
+            <div class="sale">New</div>
+          </div>
+          <img class="review-icon" alt="" src="./public/review2.svg" />
+        </div>
+        <div class="minimal-chair3">
+          <div class="product">
+            <b class="b">$120</b>
+            <div class="div7">$150</div>
+            <div class="delicia-3-piece">Delicia 3 Piece Living Room</div>
+            <div class="furniture3">Furniture</div>
+            <div class="image-placeholder">
+              <div class="container"></div>
+              <img class="container-icon" alt="" src="./public/container11@2x.png"/>
+            </div>
+            <img class="hover-feature-icon10" alt="" src="./public/hover-feature6.svg"/>
+          </div>
+          <div class="new">
+            <div class="new-child"></div>
+            <div class="sale">New</div>
+          </div>
+          <img class="review-icon" alt="" src="./public/review6.svg" />
+        </div>
+        <div class="minimal-chair6">
+          <div class="product">
+            <b class="b">$100</b>
+            <div class="div7">$120</div>
+            <div class="delicia-3-piece">Wood Coffee Tables</div>
+            <div class="tabble2">tabble</div>
+            <div class="image-placeholder">
+              <div class="container"></div>
+              <img  class="container-icon"  alt=""  src="./public/container12@2x.png"/>
+            </div>
+            <img  class="hover-feature-icon11"  alt=""  src="./public/hover-feature8.svg"/>
+          </div>
+          <div class="new">
+            <div class="new-child1"></div>
+            <div class="sale">Sale</div>
+          </div>
+          <img class="review-icon" alt="" src="./public/review7.svg" />
+        </div>
+        <div class="minimal-chair5">
+          <div class="product">
+            <b class="b">$100</b>
+            <div class="div7">$120</div>
+            <div class="acacia-wood-club">Acacia Wood Club Chairs</div>
+            <div class="bench">Chair</div>
+            <div class="image-placeholder">
+              <div class="container"></div>
+              <img  class="container-icon"  alt=""  src="./public/container13@2x.png"/>
+            </div>
+            <img class="hover-feature-icon12" alt="" src="./public/hover-feature9.svg"/>
+          </div>
+          <div class="new">
+            <div class="dicount-child"></div>
+            <div class="div31">-30%</div>
+          </div>
+          <img class="review-icon" alt="" src="./public/review8.svg" />
+        </div>
+        <div class="minimal-chair4">
+          <div class="product">
+            <b class="b">$130</b>
+            <div class="div7">$150</div>
+            <div class="microfiber-sofa">Microfiber Sofa</div>
+            <div class="bench">sofa</div>
+            <div class="image-placeholder">
+              <div class="container"></div>
+              <img class="container-icon" alt="" src="./public/container14@2x.png"/>
+            </div>
+            <img  class="hover-feature-icon13"  alt=""  src="./public/hover-feature8.svg"/>
+          </div>
+          <div class="new">
+            <div class="dicount-child"></div>
+            <div class="div31">-30%</div>
+          </div>
+          <img class="review-icon" alt="" src="./public/review2.svg" />
+        </div>
+        <div class="minimal-chair7">
+          <div class="product">
+            <b class="b">$130</b>
+            <div class="div7">$150</div>
+            <div class="amalia-cowhide-bench">Amalia Cowhide Bench</div>
+            <div class="bench">Bench</div>
+            <div class="image-placeholder">
+              <div class="container"></div>
+              <img  class="container-icon"  alt=""  src="./public/container15@2x.png"/>
+            </div>
+            <img class="hover-feature-icon14" alt="" src="./public/hover-feature10.svg" />
+          </div>
+          <div class="new">
+            <div class="new-child1"></div>
+            <div class="sale">Sale</div>
+          </div>
+          <img class="review-icon" alt="" src="./public/review9.svg" />
+        </div>
+      </div>
+      <div class="page">
+        <button class="arrow" autofocus>
+          <img class="arrow-child" alt="" src="./public/group-1996.svg" />
+        </button>
+        <div class="page1">Page</div>
+        <div class="of-100">of 100</div>
+        <div class="next-button" data-animate-on-scroll>
+          <button class="next-button-child" autofocus></button>
+          <div class="next">
+            <div class="next-page">Next page</div>
+            <img class="group-icon3" alt="" src="./public/group3.svg" />
+          </div>
+        </div>
+        <input class="number-of-page" type="number" defaultvalue="1" placeholder="1"/>
+      </div>
+      <div class="testimonials">
+        <div class="testimonials1">
+          <div class="card" id="example"></div>          
+          <div class="co-founder">Co-founder</div>
+          <div class="angelina-joly">Angelina Joly</div>
+          <div class="i-like-furnikingcom">
+            I like Furniking.com and as compared to other company it's polices
+            and customers support is very good easy to reach., also many time
+            they unable to delivered. The ultricies are pregnant while the quis
+            is suspended. Risus commodo viverra maecenas accumsan lacus vel
+            facilisist amet.
+          </div>
+        <div id="gallery"><!--карусель-->
+          <div class="photos">
+          <img  class="image-placeholder-icon"  alt=""  src="./public/Image Placeholder.png"/>
+          <img  class="image-placeholder-icon"  alt=""  src="./public/2.png"/>
+          <img  class="image-placeholder-icon"  alt=""  src="./public/3.png"/>
+          <img  class="image-placeholder-icon"  alt=""  src="./public/4.png"/>
+        </div>
+        <div class="buttons">
+          <button class="navigation prev" autofocus>
+            <img  class="outlined-navigation-expand"  alt=""  src="./public/navigation-.svg"/>
+          </button>
+          <button class="navigation1 " autofocus>
+            <img  class="outlined-navigation-expand1"  alt=""  src="./public/navigation-2.svg"/>
+          </button>
+        </div>
+        </div>
+        </div>
+        <script src="./karusel.js"></script>
+        <b class="what-our-customer">What Our Customer Says</b>
+      </div>
+      <div class="blogs">
+        <div class="post-01">
+          <div class="image"></div>
+          <img class="card-icon" alt="" src="./public/card@2x.png" />
+          <div class="tag">
+            <img  class="background-icon"  alt=""  src="./public/-background.svg"/>
+            <div class="misc-tag">
+              <div class="tag1">Furniture</div>
+              <img  class="ic24-tag-1-icon"  alt=""  src="./public/ic24tag-1.svg"/>
+            </div>
+          </div>
+          <div class="september-2022">23 September 2022</div>
+          <div class="read-more6">Read more</div>
+          <b class="begineer-guide-buying">Begineer guide buying minimal sofa</b>
+        </div>
+        <div class="post-4">
+          <div class="image"></div>
+          <img class="card-icon" alt="" src="./public/card1@2x.png" />
+          <div class="tag2">
+            <img  class="background-icon1"  alt=""  src="./public/-background1.svg"/>
+            <div class="misc-tag1">
+              <div class="tag3">TABLE</div>
+              <img  class="ic24-tag-1-icon1"  alt=""  src="./public/ic24tag-11.svg"/>
+            </div>
+          </div>
+          <div class="september-20221">23 September 2022</div>
+          <div class="read-more6">Read more</div>
+          <b class="begineer-guide-buying">Buying best minimal computer table</b>
+        </div>
+        <div class="post-3">
+          <div class="image"></div>
+          <img class="card-icon" alt="" src="./public/card2@2x.png" />
+          <div class="march-2022">23 march 2022</div>
+          <div class="tag4">
+            <img  class="background-icon2"  alt=""  src="./public/-background2.svg"/>
+            <div class="misc-tag2">
+              <div class="tag5">Bench</div>
+              <img  class="ic24-tag-1-icon"  alt=""  src="./public/ic24tag-12.svg"/>
+            </div>
+          </div>
+          <div class="read-more8">Read more</div>
+          <b class="how-to-choose">How to choose best modern bench</b>
+        </div>
+        <div class="post-5">
+          <div class="image"></div>
+          <img class="card-icon" alt="" src="./public/card3@2x.png" />
+          <div class="march-2022">23 march 2022</div>
+          <div class="tag4">
+            <img  class="background-icon2"  alt=""  src="./public/-background3.svg"/>
+            <div class="misc-tag3">
+              <div class="tag7">Chair</div>
+              <img class="ic24-tag-1-icon" alt="" src="./public/ic24tag-13.svg"/>
+            </div>
+          </div>
+          <div class="read-more8">Read more</div>
+          <b class="how-to-choose">
+            <p class="we-serve-your">Best Summer Outfit</p>
+            <p class="we-serve-your">Style in this Country</p>
+          </b>
+        </div>
+        <b class="our-latest-articles">Our Latest Articles</b>
+      </div>
+      <footer class="footer">
+        <a class="supports-feedbcak-contact-container">
+          <p class="supports">Supports</p>
+          <p class="we-serve-your">Feedbcak</p>
+          <p class="we-serve-your">Contact us</p>
+          <p class="we-serve-your">Download app</p>
+          <p class="we-serve-your">Terms conditins</p>
+        </a>
+        <a class="store-furniture-tabble-container">
+          <p class="supports">Store</p>
+          <p class="we-serve-your">Furniture</p>
+          <p class="we-serve-your">Tabble</p>
+          <p class="we-serve-your">Sofa</p>
+          <p class="we-serve-your">Other</p>
+        </a>
+        <a class="help-privacy-policy-container">
+          <p class="supports">Help</p>
+          <p class="we-serve-your">Privacy Policy</p>
+          <p class="we-serve-your">Shipping & Delivery</p>
+          <p class="we-serve-your">Refund Policy</p>
+          <p class="we-serve-your">Track Your Order</p>
+        </a>
+        <div class="address">
+          <div class="funking-is-the">
+            Funking is the a popular Ecommerce site. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor
+          </div>
+        </div>
+        <div class="sosmed">
+          <a  class="facebook"  href="https://ru-ru.facebook.com/"  target="_blank">
+            <div class="facebook-child"></div>
+            <img  class="ic-facebook-icon"  alt=""  src="./public/icfacebook.svg"/>
+          </a>
+          <a class="twitter" href="https://twitter.com/" target="_blank">
+            <div class="facebook-child"></div>
+            <img class="ic-twitter-icon" alt="" src="./public/ictwitter.svg" />
+          </a>
+          <a  class="instagram"  href="https://www.instagram.com/"  target="_blank">
+            <div class="facebook-child"></div>
+            <img  class="ic-instagram-icon"  alt=""  src="./public/icinstagram.svg"/>
+          </a>
+          <a  class="pinterest"  href="https://www.pinterest.com/"  target="_blank">
+            <div class="facebook-child"></div>
+            <img class="ic-pinterset-icon" alt=""  src="./public/icpinterset.svg" />
+          </a>
+        </div>
+        <div class="component-1">
+          <button class="logo1" id="logo1">
+            <div class="furniking1">Furniking</div>
+            <img class="group-icon"  alt="" src="./public/group4.svg" />
+          </button>
+        </div>
+        <div class="footer-footer">
+          <div class="rectangle"></div>
+          <div class="funking-all">© 2021 Funking - All rights reserved.</div>
+          <div class="terms">Terms</div>
+          <div class="security">Security</div>
+          <div class="privacy">Privacy</div>
+        </div>
+        <div class="footer-child"></div>
+      </footer>
+    </div>
+    <script src="./js.js"></script>
+  </body>
+</html>

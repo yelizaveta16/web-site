@@ -1,0 +1,109 @@
+@keyframes pulsate {
+    0% {
+      transform: scale(1);
+      transform-origin: center center;
+      animation-timing-function: ease-out;
+    }
+    10% {
+      transform: scale(0.91);
+      animation-timing-function: ease-in;
+    }
+    17% {
+      transform: scale(0.98);
+      animation-timing-function: ease-out;
+    }
+    33% {
+      transform: scale(0.87);
+      animation-timing-function: ease-in;
+    }
+    45% {
+      transform: scale(1);
+      animation-timing-function: ease-out;
+    }
+}
+  @keyframes shake-horizontal {
+    0%,
+    to {
+      transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+      transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60% {
+      transform: translateX(10px);
+    }
+    80% {
+      transform: translateX(8px);
+    }
+    90% {
+      transform: translateX(-8px);
+    }
+}
+  @keyframes jello-horizontal {
+    0%,
+    to {
+      transform: scale3d(1, 1, 1);
+    }
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+}
+/*кнопка наверх*/
+  .btn-up {
+    position: fixed;
+    background-color: #7AC751;
+    right: 20px;
+    bottom: 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.15s ease-in-out, transform 0.3s ease-in-out;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+    transform: translateY(0);    
+  }
+  .btn-up_hide {
+    display: none;    
+  }
+  .btn-up_hiding {
+    opacity: 0;
+    transform: translateY(100px);    
+  }
+  .btn-up-icon {
+    width: 40px;
+    height: 40px;
+    fill: currentcolor;    
+  }
+  @media (hover: hover) and (pointer: fine) {
+    .btn-up:hover {
+      background-color: #ffd900;      
+    }
+  }
+  #topNubex {
+	position: fixed;
+	right: 45px;
+	bottom: 45px;
+    z-index: 3;
+   }
+   
